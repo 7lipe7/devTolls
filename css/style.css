@@ -8,6 +8,10 @@ body {
  a{
       text-decoration: none;
       color: #020617;
+      border: none;
+    }
+    button{
+      border: none;
     }
 .header {
   text-align: center;
