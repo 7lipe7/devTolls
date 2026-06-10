@@ -1,27 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dev tools</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <title>devTools</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <nav>
-        <div class="nav-box">
 
-            <h1>bem vindo ao <b>Dev Tools</b> <img src="figs/icons8-desenvolvedor-32.png" alt=""></h1>
-            
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>devTools <img src="figs/icons8-desenvolvedor-32.png" alt=""></h1>
+    <p>Um site para tirar suas dúvidas sobre desenvolvimento web</p>
+  </div>
+
+  <!-- HTML -->
+  <div class="section html">
+    <div class="content">
+      <h2>HTML</h2>
+      <p>A linguagem para construir páginas da web</p>
+
+      <button class="btn green">Ver mais sobre HTML</button>
     </div>
 
-</nav>
-    <hr>
-    <main>
-        <div class="title-main">
- <h2>Introdução ao HTML</h2>
-        </div>
-       
-    </main>
-    
+    <div class="code-box">
+      <h4>Exemplo de HTML:</h4>
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;Título&lt;/h1&gt;
+&lt;p&gt;Parágrafo&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+      <button class="try-btn">Testar código</button>
+    </div>
+  </div>
+
+  <!-- CSS -->
+  <div class="section css">
+    <div class="content">
+      <h2>CSS</h2>
+      <p>A linguagem para estilizar páginas web</p>
+
+      <button class="btn green">Ver mais sobre CSS</button>
+    </div>
+
+    <div class="code-box">
+      <h4>Exemplo de CSS:</h4>
+      <pre>
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: white;
+}
+      </pre>
+      <button class="try-btn">Testar código</button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <div class="section js">
+    <div class="content">
+      <h2>JavaScript</h2>
+      <p>A linguagem para programar páginas web</p>
+
+      <button class="btn green">Ver mais sobre JavaScript</button>
+    </div>
+
+    <div class="code-box">
+      <h4>Exemplo de JavaScript:</h4>
+      <pre>
+function minhaFuncao() {
+  document.body.style.background = "red";
+}
+      </pre>
+      <button class="try-btn">Testar código</button>
+    </div>
+  </div>
+
 </body>
 </html>
