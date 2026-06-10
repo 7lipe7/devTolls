@@ -55,6 +55,10 @@ body {
   cursor: pointer;
   transition: 0.3s;
 }
+a{
+  text-decoration: none;
+  color: #020617;
+}
 
 .btn:hover {
   background-color: #0ea5e9;
