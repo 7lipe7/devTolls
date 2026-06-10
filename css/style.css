@@ -5,10 +5,13 @@ body {
   color: #e2e8f0;
 }
 
-
+ a{
+      text-decoration: none;
+      color: #020617;
+    }
 .header {
   text-align: center;
-  padding: 50px 20px;
+  padding: 20px 10px;
   background-color: #020617;
 }
 
@@ -19,92 +22,41 @@ body {
 
 .header p {
   color: #94a3b8;
-}
-
-.section {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 50px 20px;
-  flex-wrap: wrap;
-}
-
-
-.content, .code-box {
-  background-color: #1e293b;
-  padding: 25px;
-  border-radius: 12px;
-  width: 300px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
-}
-
-
-.content h2 {
-  color: #38bdf8;
-}
-
-
-.btn {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #38bdf8;
-  color: #020617;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-a{
-  text-decoration: none;
-  color: #020617;
-}
-
-.btn:hover {
-  background-color: #0ea5e9;
-  transform: scale(1.05);
-}
-
-
-pre {
-  background-color: #020617;
-  padding: 15px;
-  border-radius: 8px;
-  font-size: 13px;
-  overflow-x: auto;
-  color: #22c55e;
-}
-
-
-.try-btn {
-  margin-top: 10px;
-  padding: 8px 15px;
-  background-color: #22c55e;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-.try-btn:hover {
-  background-color: #16a34a;
-}
-
-
-@media (max-width: 768px) {
-  .header h1 {
-    font-size: 28px;
-  }
-}
-
-.header p {
-  color: #94a3b8;
   font-size: 16px;
 }
 
 
+.sidebar {
+  position: fixed;
+  width: 220px;
+  height: 100vh;
+  background-color: #020617;
+  padding-top: 20px;
+  transition: 0.3s;
+}
+
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: #1e293b;
+}
+
+
+.main {
+  margin-left: 220px;
+  transition: 0.3s;
+}
+
+
 .section {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 40px;
   padding: 40px 15px;
   flex-wrap: wrap;
@@ -115,14 +67,11 @@ pre {
   background-color: #1e293b;
   padding: 25px;
   border-radius: 12px;
-  width: 300px;
-  max-width: 100%; 
+  width: 500px;
+  max-width: 100%;
   box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
-.content h2 {
-  color: #38bdf8;
-}
 
 .btn {
   display: inline-block;
@@ -133,12 +82,14 @@ pre {
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .btn:hover {
   background-color: #0ea5e9;
   transform: scale(1.05);
 }
+
 
 pre {
   background-color: #020617;
@@ -148,6 +99,7 @@ pre {
   overflow-x: auto;
   color: #22c55e;
 }
+
 
 .try-btn {
   margin-top: 10px;
@@ -162,20 +114,136 @@ pre {
   background-color: #16a34a;
 }
 
+.try-output {
+  width: min(900px, 95%);
+  margin: 0 auto 40px;
+  background-color: #0b1220;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  color: #e2e8f0;
+}
+
+.try-output__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.try-output__header h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.try-output__clear {
+  background: #ef4444;
+  border: none;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+
+try-output__clear:hover {
+  filter: brightness(0.95);
+}
+
+.try-output__close {
+  padding: 8px 15px;
+  background-color: #ef4444;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-left: 2%;
+}
+
+.try-output__close:hover {
+  filter: brightness(0.95);
+}
+
+.navbar-toggler{
+    display: flex;
+    margin-right: 90%;
+  }
+
+
+@media (max-width: 1024px) {
+
+  .content, .code-box {
+    width: 45%;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+}
+
+
+
 
 @media (max-width: 768px) {
 
+ 
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .sidebar a {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .main {
+    margin-left: 0;
+  }
+
   .section {
     flex-direction: column;
-    align-items: center;
     gap: 20px;
   }
 
   .content, .code-box {
-    width: 80%; 
+    width: 90%;
   }
 
+
   .btn, .try-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .header h1 {
+    font-size: 26px;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .header h1 {
+    font-size: 22px;
+  }
+
+  .header p {
+    font-size: 14px;
+  }
+
+  .sidebar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar a {
     width: 100%;
     text-align: center;
   }

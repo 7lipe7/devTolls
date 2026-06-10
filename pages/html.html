@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>devTools</title>
+
+  <link rel="stylesheet" href="../css/html.css">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+
+<div class="header text-center bg-dark text-white p-2">
+  
+  <h1>
+    devTools 
+    <img src="../figs/icons8-desenvolvedor-32.png" alt="">
+  </h1>
+
+  <p>Um site para tirar suas dúvidas sobre desenvolvimento web</p>
+
+  <div class="collapse mt-3" id="navbarToggleExternalContent">
+    <div class="bg-secondary p-4 rounded">
+      <h5 class="text-white">Menu</h5>
+      <span class="text-light">
+        <a href="../index.html" class="text-white text-decoration-none">Início</a>
+      </span>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-dark mt-3">
+    <div class="container-fluid justify-content-center">
+      <button class="navbar-toggler" 
+              type="button" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#navbarToggleExternalContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+</div>
+
+
+<div class="container-custom">
+
+  <h2 class="titulo">Guia de HTML</h2>
+
+  <div class="grid">
+
+    <div class="card-custo">
+      <h4> O que é HTML?</h4>
+      <p>Linguagem de marcação usada para estruturar páginas web.</p>
+    </div>
+
+    <div class="card-custo">
+      <h4>Estrutura básica</h4>
+      <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Título&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    Conteúdo
+  &lt;/body&gt;
+&lt;/html&gt;
+      </pre>
+    </div>
+
+    <div class="card-custo">
+      <h4>Principais Tags</h4>
+      <ul>
+        <li>&lt;h1&gt; até &lt;h6&gt;</li>
+        <li>&lt;p&gt;</li>
+        <li>&lt;a&gt;</li>
+        <li>&lt;img&gt;</li>
+      </ul>
+    </div>
+
+    <div class="card-custo">
+      <h4> Listas</h4>
+      <ul>
+        <li>&lt;ul&gt;</li>
+        <li>&lt;ol&gt;</li>
+        <li>&lt;li&gt;</li>
+      </ul>
+    </div>
+
+    <div class="card-custo">
+      <h4> Formulários</h4>
+      <ul>
+        <li>&lt;form&gt;</li>
+        <li>&lt;input&gt;</li>
+        <li>&lt;button&gt;</li>
+      </ul>
+    </div>
+
+    <div class="card-custo">
+      <h4> Dicas</h4>
+      <ul>
+        <li>Feche todas as tags</li>
+        <li>Use identação</li>
+        <li>Use HTML semântico</li>
+      </ul>
+    </div>
+
+     <div class="card-custo">
+  <h4>HTML Semântico</h4>
+  <ul>
+    <li>&lt;header&gt;</li>
+    <li>&lt;main&gt;</li>
+    <li>&lt;section&gt;</li>
+    <li>&lt;article&gt;</li>
+    <li>&lt;footer&gt;</li>
+  </ul>
+  <p>Ajuda na organização e SEO do site.</p>
+</div>
+
+<div class="card-custo">
+  <h4>Links</h4>
+  <ul>
+    <li>&lt;a href="url"&gt;</li>
+    <li>target="_blank"</li>
+  </ul>
+  <p>Usado para navegação entre páginas.</p>
+</div>
+
+<div class="card-custo">
+  <h4>Botões em HTML</h4>
+
+  <ul>
+    <li>&lt;button&gt;</li>
+    <li>type="button"</li>
+    <li>type="submit"</li>
+    <li>type="reset"</li>
+  </ul>
+
+  <p>Usado para executar ações na página.</p>
+
+  <pre>
+&lt;button&gt;Clique aqui&lt;/button&gt;
+
+&lt;button type="submit"&gt;Enviar&lt;/button&gt;
+
+&lt;button type="reset"&gt;Limpar&lt;/button&gt;
+  </pre>
+</div>
+
+
+<div class="card-custo">
+  <h4>Imagens</h4>
+  <ul>
+    <li>&lt;img src="" alt=""&gt;</li>
+  </ul>
+  <p>O atributo alt melhora acessibilidade.</p>
+</div>
+
+
+<div class="card-custo">
+  <h4>Tabelas</h4>
+  <ul>
+    <li>&lt;table&gt;</li>
+    <li>&lt;tr&gt;</li>
+    <li>&lt;td&gt;</li>
+    <li>&lt;th&gt;</li>
+  </ul>
+  <p>Usado para dados organizados em linhas e colunas.</p>
+</div>
+
+<div class="card-custo">
+  <h4>Formulários completos</h4>
+  <ul>
+    <li>&lt;input type="text"&gt;</li>
+    <li>&lt;input type="email"&gt;</li>
+    <li>&lt;input type="password"&gt;</li>
+    <li>&lt;textarea&gt;</li>
+    <li>&lt;select&gt;</li>
+  </ul>
+</div>
+
+<div class="card-custo">
+  <h4>Atributos HTML</h4>
+  <ul>
+    <li>id</li>
+    <li>class</li>
+    <li>style</li>
+    <li>href</li>
+    <li>src</li>
+    <li>alt</li>
+  </ul>
+</div>
+
+<div class="card-custo">
+  <h4>Multimídia</h4>
+  <ul>
+    <li>&lt;audio&gt;</li>
+    <li>&lt;video&gt;</li>
+  </ul>
+  <p>Permite adicionar áudio e vídeo no site.</p>
+</div>
+
+<div class="card-custo">
+  <h4>Comentários</h4>
+  <pre>
+&lt;!-- Isso é um comentário --&gt;
+  </pre>
+  <p>Não aparece na página final.</p>
+</div>
+
+<div class="card-custo">
+  <h4>Entidades HTML</h4>
+  <ul>
+    <li>&amp;lt; = &lt;</li>
+    <li>&amp;gt; = &gt;</li>
+    <li>&amp;amp; = &amp;</li>
+  </ul>
+</div>
+
+<div class="card-custo">
+  <h4>Boas práticas</h4>
+  <ul>
+    <li>Use tags semânticas</li>
+    <li>Indentação correta</li>
+    <li>Evite excesso de &lt;div&gt;</li>
+    <li>Use nomes de classes organizados</li>
+  </ul>
+</div>
+
+<div class="card-custo">
+  <h4>Links em HTML</h4>
+
+  <ul>
+    <li>&lt;a href=""&gt;</li>
+    <li>target="_blank"</li>
+    <li>mailto:</li>
+    <li>tel:</li>
+  </ul>
+
+  <p>Usado para navegar entre páginas ou sites.</p>
+
+  <pre>
+&lt;a href="https://google.com"&gt;Google&lt;/a&gt;
+
+
+  </pre>
+</div>
+  
+<div class="card-custo">
+  <h4>Validação de Formulários</h4>
+
+  <ul>
+    <li>required</li>
+    <li>min</li>
+    <li>max</li>
+    <li>maxlength</li>
+    <li>pattern</li>
+  </ul>
+
+  <pre>
+&lt;input type="text" required&gt;
+&lt;input type="number" min="1" max="10"&gt;
+&lt;input type="text" maxlength="20"&gt;
+  </pre>
+</div>
+
+<div class="card-custo">
+  <h4>Inputs Avançados</h4>
+
+  <ul>
+    <li>text</li>
+    <li>email</li>
+    <li>password</li>
+    <li>number</li>
+    <li>date</li>
+    <li>file</li>
+    <li>checkbox</li>
+    <li>radio</li>
+    <li>range</li>
+    <li>color</li>
+  </ul>
+
+  <pre>
+&lt;input type="date"&gt;
+&lt;input type="number"&gt;
+&lt;input type="file"&gt;
+&lt;input type="color"&gt;
+&lt;input type="checkbox"&gt;
+&lt;input type="radio"&gt;
+  </pre>
+</div>
+
+<div class="card-custo">
+  <h4>Meta Tags (SEO)</h4>
+
+  <ul>
+    <li>charset</li>
+    <li>viewport</li>
+    <li>description</li>
+    <li>author</li>
+  </ul>
+
+  <pre>
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;meta name="description" content="Site de devTools"&gt;
+&lt;meta name="author" content="Seu nome"&gt;
+  </pre>
+</div>
+
+<div class="card-custo">
+  <h4>Tags Estruturais</h4>
+
+  <ul>
+    <li>&lt;nav&gt;</li>
+    <li>&lt;aside&gt;</li>
+    <li>&lt;section&gt;</li>
+    <li>&lt;article&gt;</li>
+    <li>&lt;div&gt;</li>
+    <li>&lt;span&gt;</li>
+  </ul>
+
+  <p>Organizam melhor o layout da página.</p>
+</div>
+
+<div class="card-custo">
+  <h4>Eventos HTML</h4>
+
+  <ul>
+    <li>onclick</li>
+    <li>oninput</li>
+    <li>onchange</li>
+  </ul>
+
+  <pre>
+&lt;button onclick="alert('Olá')"&gt;Clique&lt;/button&gt;
+
+&lt;input oninput="console.log(this.value)"&gt;
+  </pre>
+</div>
+
+
+
+</div>
+
+</body>
+</html>

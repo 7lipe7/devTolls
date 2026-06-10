@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS - devTools</title>
+  <title>JavaScript - devTools</title>
 
   <link rel="stylesheet" href="../css/css.css">
 
@@ -18,10 +18,10 @@
 
   <h1>
     devTools
-    <img src="../figs/icons8-desenvolvedor-32.png" alt="">
+    <img src="../figs/icons8-desenvolvedor-32.png" alt="Ícone de desenvolvedor">
   </h1>
 
-  <p>Guia completo de CSS para estilização de páginas web</p>
+  <p>Guia completo de JavaScript para desenvolvimento web</p>
 
   <div class="collapse mt-3" id="menu">
     <div class="bg-secondary p-4 rounded">
@@ -46,17 +46,20 @@
 <!-- CONTEÚDO -->
 <div class="container-custom">
 
-  <h2 class="titulo">Guia de CSS</h2>
+  <h2 class="titulo">Guia de JavaScript</h2>
 
   <div class="grid">
 
     <div class="card-custo">
-      <h4>O que é CSS?</h4>
-      <p>CSS é a linguagem usada para estilizar páginas web.</p>
+      <h4>O que é JavaScript?</h4>
+      <p>
+        JavaScript é uma linguagem de programação usada para criar interatividade em páginas web,
+        como animações, formulários dinâmicos e sistemas completos.
+      </p>
     </div>
 
     <div class="card-custo">
-      <h4>Formas de uso</h4>
+      <h4>Como usar JavaScript</h4>
       <ul>
         <li>Inline</li>
         <li>Interno</li>
@@ -65,50 +68,53 @@
 
       <pre>
 /* Externo */
-style.css
+script.js
 
 /* Interno */
-&lt;style&gt; p { color: red; } &lt;/style&gt;
+&lt;script&gt;
+  console.log("Olá mundo");
+&lt;/script&gt;
 
 /* Inline */
-&lt;p style="color:red"&gt;Texto&lt;/p&gt;
+&lt;button onclick="alert('Olá')"&gt;Clique&lt;/button&gt;
       </pre>
     </div>
 
     <div class="card-custo">
-      <h4>Seletores</h4>
+      <h4>Variáveis</h4>
       <ul>
-        <li>Elemento (p)</li>
-        <li>Classe (.minha-classe)</li>
-        <li>ID (#meu-id)</li>
+        <li>var (antigo)</li>
+        <li>let (moderno)</li>
+        <li>const (constante)</li>
       </ul>
     </div>
 
     <div class="card-custo">
-      <h4>Cores</h4>
+      <h4>Tipos de dados</h4>
       <ul>
-        <li>hex (#fff)</li>
-        <li>rgb()</li>
-        <li>rgba()</li>
+        <li>String</li>
+        <li>Number</li>
+        <li>Boolean</li>
+        <li>Array</li>
+        <li>Object</li>
       </ul>
     </div>
 
     <div class="card-custo">
-      <h4>Box Model</h4>
-      <ul>
-        <li>margin</li>
-        <li>padding</li>
-        <li>border</li>
-      </ul>
+      <h4>Funções</h4>
+      <pre>
+function soma(a, b) {
+  return a + b;
+}
+      </pre>
     </div>
 
     <div class="card-custo">
-      <h4>Display</h4>
+      <h4>Eventos</h4>
       <ul>
-        <li>block</li>
-        <li>inline</li>
-        <li>flex</li>
-        <li>grid</li>
+        <li>onclick</li>
+        <li>onmouseover</li>
+        <li>onchange</li>
       </ul>
     </div>
 
