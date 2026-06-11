@@ -4,6 +4,11 @@ body {
   background-color: #8AACCD;
   color: #e2e8f0;
 }
+.text-white{
+  
+  font-size: large;
+  
+}
 
  a{
       text-decoration: none;
